@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.conteiner {
+    width: 901px;
+    margin: 0 auto 0 auto;
+}
+
+body {
+    font-family: "Playfair Display", "serif";
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.article-section-litlename {
+    font-family: 'Ubuntu', sans-serif;
+    color: #b4ad9e;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.article-section-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.article-section-item {
+    width: 421px;
+    display: inline-block;
+    margin-right: 55px;
+}
+
+.article-section-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.page-header-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 77px;
+    margin-bottom: 104px;
+}
+
+.page-header-nav-list li {
+    display: inline-block;
+}
+
+.page-header-nav-list1 {
+    margin-right: 120px;
+}
+
+.page-header-nav-list2 {
+    margin-right: 100px;
+}
+
+.page-header-nav-list3 {
+    margin-right: 90px;
+}
+
+.page-header-nav-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #626262;
+
+}
+.article-section-img {
+    
+}
+
+.page-header-nav-list a:hover,
+.page-header-nav-list a:focus {
+    color: aqua;
+}
+
+.article-section-list h4 {
+    font-size: 30px;
+    line-height: 36px;
+
+}
+
+.titles-section button {
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="ratio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
