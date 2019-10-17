@@ -13,97 +13,121 @@ html {
     margin: 0 auto 0 auto;
 }
 
+/*text format*/
 body {
-    font-family: "Playfair Display", "serif";
+    font-family: "Playfair Display", "Arial";
     color: #626262;
     font-size: 14px;
     line-height: 24px;
+    font-style: normal;
+    ;
 }
 
-.article-section-litlename {
-    font-family: 'Ubuntu', sans-serif;
+.nav-list a {
+    font-family: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content-list h3 {
+    font-family: "Ubuntu", "Arial";
     color: #b4ad9e;
+    font-style: normal;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
-.article-section-list {
+.content-list h4 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+
+/*navigation format*/
+.nav-list {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-.article-section-item {
-    width: 421px;
+.nav-list li {
     display: inline-block;
-    margin-right: 55px;
 }
 
-.article-section-item:nth-child(2n) {
-    margin-right: 0;
-}
-
-.page-header-nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.nav-list {
     text-align: center;
-    margin-top: 77px;
-    margin-bottom: 104px;
+    padding: 76px 0 80px 0;
 }
 
-.page-header-nav-list li {
-    display: inline-block;
-}
-
-.page-header-nav-list1 {
+.nav-list-item1 {
     margin-right: 120px;
 }
 
-.page-header-nav-list2 {
+.nav-list-item2 {
     margin-right: 100px;
 }
 
-.page-header-nav-list3 {
-    margin-right: 90px;
+.nav-list-item3 {
+    margin-right: 94px;
 }
 
-.page-header-nav-list a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #626262;
-
-}
-.article-section-img {
-    
+.nav-list a:hover {
+    color: cyan;
 }
 
-.page-header-nav-list a:hover,
-.page-header-nav-list a:focus {
-    color: aqua;
+/*content format*/
+.content-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.article-section-list h4 {
-    font-size: 30px;
-    line-height: 36px;
-
+.content-list li {
+    display: inline-block;
+    width: 420px;
 }
 
-.titles-section button {
+li.content-list-item:nth-child(odd) {
+    margin-right: 54px;
+}
+
+.content-list img,
+h3 {
+    margin-bottom: 30px;
+}
+
+.content-list h4 {
+    margin-bottom: 34px;
+}
+
+.content-list-p {
+    margin-bottom: 132px;
+}
+
+.content-list-last-p {
+    margin-bottom: 54px;
+}
+
+/*button format*/
+.first-but {
+    font-family: inherit;
+    font-style: inherit;
     font-size: 20px;
+    color: inherit;
     line-height: 24px;
-    color: #626262;
+    text-decoration: none;
     background-color: #ffffff;
+    border-image: none;
+    border-color: #626262;
+    border-width: 1px;
+    padding: 18px 20px;
+    margin: 0px 380px 70px 360px;
 }
 
-
-
-
-
-
-
-
-
+/*Взято со скринкаста в 3-тьем модуле*/
 img {
     display: block;
     max-width: 100%;
