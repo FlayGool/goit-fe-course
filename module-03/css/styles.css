@@ -51,6 +51,7 @@ body {
 /*navigation format*/
 .nav-list {
     list-style: none;
+    margin: unset;
 }
 
 .nav-list li {
