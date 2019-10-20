@@ -22,6 +22,7 @@ html {
 /*text format*/
 
 .nav-list-link {
+    color: #626262;
     text-decoration: none;
     text-transform: uppercase;
 }
