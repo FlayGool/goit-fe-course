@@ -9,7 +9,7 @@ html {
 }
 
 .container {
-    width: 901px;
+    width: 900px;
     margin: 0 auto 0 auto;
     text-align: center;
     font-family: "Playfair Display", "Arial", "serif";
@@ -85,6 +85,7 @@ html {
 .content-list li {
     display: inline-block;
     width: 420px;
+    vertical-align: top;
 }
 
 li.content-list-item:nth-child(odd) {
