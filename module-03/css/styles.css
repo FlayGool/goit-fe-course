@@ -8,33 +8,26 @@ html {
     box-sizing: inherit;
 }
 
-.conteiner {
+.container {
     width: 901px;
     margin: 0 auto 0 auto;
+    text-align: center;
+    font-family: "Playfair Display", "Arial", "serif";
+    color: #626262;
+    font-size: 0px;
+    line-height: 24px;
+    font-style: normal;
 }
 
 /*text format*/
-body {
-    font-family: "Playfair Display", "Arial";
-    color: #626262;
-    font-size: 14px;
-    line-height: 24px;
-    font-style: normal;
-    ;
-}
 
-.nav-list a {
-    font-family: inherit;
-    font-style: inherit;
-    font-size: inherit;
-    color: inherit;
-    line-height: inherit;
+.nav-list-link {
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .content-list h3 {
-    font-family: "Ubuntu", "Arial";
+    font-family: "Ubuntu", "Arial", "sans-serif";
     color: #b4ad9e;
     font-style: normal;
     font-size: 14px;
@@ -47,20 +40,21 @@ body {
     line-height: 1.2;
 }
 
+.text-size {
+    font-size: 14px;
+}
 
 /*navigation format*/
 .nav-list {
+    display: inline-block;
     list-style: none;
     margin: unset;
+    padding: 74px 0 102px 0;
+    width: 901px;
 }
 
 .nav-list li {
     display: inline-block;
-}
-
-.nav-list {
-    text-align: center;
-    padding: 76px 0 80px 0;
 }
 
 .nav-list-item1 {
@@ -68,15 +62,15 @@ body {
 }
 
 .nav-list-item2 {
-    margin-right: 100px;
+    margin-right: 104px;
 }
 
 .nav-list-item3 {
-    margin-right: 94px;
+    margin-right: 96px;
 }
 
-.nav-list a:hover {
-    color: cyan;
+.nav-list-link:hover {
+    color: #03a9f4;
 }
 
 /*content format*/
@@ -84,6 +78,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: left;
 }
 
 .content-list li {
@@ -92,47 +87,46 @@ body {
 }
 
 li.content-list-item:nth-child(odd) {
-    margin-right: 54px;
+    margin-right: 60px;
 }
 
-.content-list img,
-h3 {
-    margin-bottom: 30px;
+.content-list-img {
+    margin: 0 0 28px;
 }
 
-.content-list h4 {
-    margin-bottom: 34px;
+.content-list-h3 {
+    margin: 0 0 28px;
+}
+
+.content-list-h4 {
+    margin: 0 0 38px;
 }
 
 .content-list-p {
-    margin-bottom: 132px;
+    margin: 0 0 132px;
 }
 
 .content-list-last-p {
-    margin-bottom: 54px;
+    margin: 0 0 56px;
 }
 
 /*button format*/
-.first-but {
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 20px;
+.first-button {
     color: inherit;
+    font-size: 20px;
     line-height: 24px;
     text-decoration: none;
     background-color: #ffffff;
-    border-image: none;
     border-color: #626262;
     border-width: 1px;
     padding: 18px 20px;
-    margin: 0px 380px 70px 360px;
 }
 
 /*Взято со скринкаста в 3-тьем модуле*/
 img {
     display: block;
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 
 .visually-hidden:not(:focus):not(:active),
