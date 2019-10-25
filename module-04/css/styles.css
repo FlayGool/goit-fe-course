@@ -24,7 +24,25 @@ img {
     display: table;
     content: '';
     clear: both;
-  }  
+  }
+  
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="ratio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /*format navigation*/
 .navigation {
@@ -33,33 +51,20 @@ img {
     line-height: 36px;
     display: block;
 }
-.title-site {
-    font-family: "Roboto", "Arial", "sans-serif";
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 36px;
-    color: #555252;
-    text-transform: uppercase;
-    margin: unset;
-}
-
-.title-site:first-letter {
-    font-weight: 900;
-    color: #1abc9c;
-}
 
 .navigation-logo {
     display: block;
     float: left;
     text-decoration: unset;
-    height: 36px;
+    height: 21px;
     width: auto;
+    margin-top: 10px;
 }
 
 .navigation-list {
     list-style: none;
     display: block;
-    width: 490px;
+    width: auto;
     height: inherit;
     margin: 0;
     padding: 0;
@@ -108,7 +113,7 @@ img {
 
 /*format products section*/
 .products-title {
-    padding: 66px 0 130px 0;
+    padding: 66px 0 90px 0;
     margin: unset;
     text-align: center;
     font-family: "Roboto", "Arial", "sans-serif";
@@ -119,9 +124,10 @@ img {
 }
 
 .products-title::after {
-    content: url(https://s8.hostingkartinok.com/uploads/images/2019/10/00bdfe1f3758b20661543c1597f18981.png);
+    content: '';
+    border-bottom:  7px solid #1abc9c;
     display: block;
-    height: 7px;
+    margin: 32px 475px 0 475px;
 }
 
 .products-list {
@@ -204,7 +210,7 @@ img {
 
 /*format news section*/
 .news-title {
-    padding: 66px 0 120px 0;
+    padding: 66px 0 80px 0;
     margin: 0;
     text-align: center;
     font-family: "Roboto", "Arial", "sans-serif";
@@ -215,9 +221,10 @@ img {
 }
 
 .news-title::after {
-    content: url(https://s8.hostingkartinok.com/uploads/images/2019/10/00bdfe1f3758b20661543c1597f18981.png);
+    content: '';
+    border-bottom:  7px solid #1abc9c;
     display: block;
-    height: 7px;
+    margin: 32px 475px 0 475px;
 }
 
 .news-list {
@@ -250,13 +257,14 @@ img {
     font-size: 18px;
     line-height: 26px;
     color: #555252;
-    padding-bottom: 40px;
+    padding-bottom: 28px;
 }
 
 .news-subtitle::after {
-    content: url(https://s8.hostingkartinok.com/uploads/images/2019/10/fb2a589ef5bcbc68e6ddaf0e1555cc21.png);
+    content: '';
     display: block;
-    height: 3px;
+    border-bottom: 3px solid #4ec6ab;
+    margin: 8px 214px 0 0;
 }
 
 .news-article {
