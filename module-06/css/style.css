@@ -174,7 +174,6 @@ input[type="ratio"].visually-hidden {
 .footer-info,
 .footer-subscribe-button {
     text-transform: uppercase;
-    margin-bottom: 16px;
     font-family: "Montserrat", "Arial", "sans-serif";
     font-size: 14px;
     font-weight: 400;
@@ -183,6 +182,7 @@ input[type="ratio"].visually-hidden {
 .services-item-title {
     display: inline-block;
     vertical-align: top;
+    line-height: 0.8;
 }
 
 .services-item-text,
@@ -217,33 +217,40 @@ input[type="ratio"].visually-hidden {
 
 .team-item-photo-container {
     background-color: #95e1d3;
+    width: 380px;
+    height: 470px;
     cursor: pointer;
+    display: flex;
+    margin-bottom: 28px;
+    justify-content: center;
 }
 
 .team-item-photo-container:hover .team-item-photo,
-.team-item-photo-container:hover .team-item-photo-gradient{
+.team-item-photo-container:hover .team-item-photo-gradient,
+.team-item-photo-container:hover .social-list {
     transform: translateX(-10px) translateY(-10px);
 }
 
-.team-item-photo-container:hover .team-item-photo-gradient{
+.team-item-photo-container:hover .team-item-photo-gradient {
     opacity: 0.9;
 }
 
+.team-item-photo-container:hover .social-list {
+    opacity: 1;
+}
+
 .team-item-photo {
-    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, opacity 0.3s linear;
 }
 
 .team-item-photo-gradient {
-    transition: transform 0.3s, opacity 0.3s linear;
+    transition: transform 0.3s linear, opacity 0.3s linear;
     position: absolute;
     width: 380px;
     height: 470px;
     z-index: 1;
     opacity: 0;
     background-image: linear-gradient(0deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .team-item-name {
@@ -276,7 +283,10 @@ input[type="ratio"].visually-hidden {
     width: 224px;
     height: 56px;
     position: absolute;
-    z-index: 10;
+    align-self: center;
+    z-index: 1;
+    opacity: 0;
+    transition: transform 0.3s linear, opacity 0.3s linear;
 }
 
 .social-item-link,
@@ -292,8 +302,12 @@ input[type="ratio"].visually-hidden {
     display: block;
     width: 55px;
     height: 56px;
+}
+
+.social-item-link:not(:nth-child(1)) {
     border-left: 1px solid #f9bd87;
 }
+
 .social-item-link:hover {
     background: center #95e1d3;
     background-repeat: no-repeat;
@@ -334,6 +348,7 @@ input[type="ratio"].visually-hidden {
     text-decoration: none;
     color: #f38181;
 }
+
 .footer-info-link:hover,
 .footer-info-link:focus {
     text-decoration: underline;
@@ -352,9 +367,11 @@ input[type="ratio"].visually-hidden {
     min-width: 230px;
     text-indent: 12px;
 }
+
 .footer-subscribe-input {
-border: 1px solid #e5e5e5;
+    border: 1px solid #e5e5e5;
 }
+
 .footer-subscribe-button {
     min-width: 150px;
     min-height: 40px;
