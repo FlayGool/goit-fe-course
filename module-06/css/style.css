@@ -304,7 +304,7 @@ input[type="ratio"].visually-hidden {
     height: 56px;
 }
 
-.social-item-link:not(:nth-child(1)) {
+.social-item:not(:nth-child(1)) {
     border-left: 1px solid #f9bd87;
 }
 
