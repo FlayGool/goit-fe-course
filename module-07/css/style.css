@@ -244,13 +244,14 @@ input[type="ratio"].visually-hidden {
     font-size: 1rem;
     color: #bbbbbb;
     line-height: 1.2;
+    opacity: 1;
 }
 
 .contacts-form-user-name,
 .contacts-form-user-email,
 .contacts-form-user-subject,
 .contacts-form-user-message {
-    border: unset;
+    border: 3px solid transparent;
     border-radius: 5px; 
     width: 455px;
     font-family: "Montserrat", "Arial", sans-serif;
@@ -266,28 +267,26 @@ input[type="ratio"].visually-hidden {
 .contacts-form-user-email:focus:valid,
 .contacts-form-user-message:focus:valid,
 .contacts-form-user-subject:focus {
-    border: 2px solid #008000;
-    padding: 17px;
-    /* transition: border 0.2s linear, padding 0.2s linear; */
+    border: 3px solid #008000;
+    transition: border 0.4s linear;
 }
 
 .contacts-form-user-name:focus:invalid,
 .contacts-form-user-email:focus:invalid,
 .contacts-form-user-message:focus:invalid {
-    border: 2px solid #8B0000;
-    padding: 17px;
-    /* transition: border 0.2s linear, padding 0.2s linear; */
+    border: 3px solid #8B0000;
+    transition: border 0.4s linear;
 }
 
 .contacts-form-user-name,
 .contacts-form-user-email,
 .contacts-form-user-subject {
-    padding: 19px;
+    padding: 16px;
     height: 52px;
 }
 
 .contacts-form-user-message {
-    padding: 19px;
+    padding: 17px;
     height: 214px;
     resize: none;
     line-height: 1.2;
