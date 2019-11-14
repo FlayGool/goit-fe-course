@@ -259,6 +259,7 @@ input[type="ratio"].visually-hidden {
     color: #bbbbbb;
     line-height: 1;
     outline: unset;
+    box-shadow: none;
 }
 
 .contacts-form-user-name:focus:valid,
@@ -267,7 +268,7 @@ input[type="ratio"].visually-hidden {
 .contacts-form-user-subject:focus {
     border: 2px solid #008000;
     padding: 17px;
-    transition: border 0.2s linear, padding 0.2s linear;
+    /* transition: border 0.2s linear, padding 0.2s linear; */
 }
 
 .contacts-form-user-name:focus:invalid,
@@ -275,7 +276,7 @@ input[type="ratio"].visually-hidden {
 .contacts-form-user-message:focus:invalid {
     border: 2px solid #8B0000;
     padding: 17px;
-    transition: border 0.2s linear, padding 0.2s linear;
+    /* transition: border 0.2s linear, padding 0.2s linear; */
 }
 
 .contacts-form-user-name,
