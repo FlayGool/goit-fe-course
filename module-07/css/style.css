@@ -1,0 +1,313 @@
+/* connection fonts */
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+        url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+        url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff');
+}
+
+/* ubuntu-italic - latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Ubuntu Italic'), local('Ubuntu-Italic'),
+        url('../fonts/ubuntu-v14-latin-italic.woff2') format('woff2'),
+        url('../fonts/ubuntu-v14-latin-italic.woff') format('woff');
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="ratio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header formatting */
+
+.services,
+.contacts {
+    padding-top: 126px;
+    text-align: center;
+    flex-basis: 576px;
+}
+
+.navigation {
+    min-height: 65px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.navigation-list,
+.services-list,
+.contacts-form-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navigation-list {
+    padding-bottom: 6px;
+}
+
+.navigation-list-item:not(:nth-child(1)) {
+    margin-left: 40px;
+}
+
+.navigation-list-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: #222222;
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+    color: #fed136;
+}
+
+/* section services formatting */
+
+.services-title,
+.contacts-title,
+.services-list-item-title {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #222222;
+}
+
+.services-subtitle,
+.contacts-subtitle,
+.services-list-item-description {
+    margin: 0;
+    padding: 0 0 78px 0;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #777777;
+}
+
+.services-list {
+    justify-content: space-between;
+}
+
+.services-list-item {
+    flex-basis: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 124px;
+}
+
+.services-list-item:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 73px;
+    height: 73px;
+    background-image: url(https://s8.hostingkartinok.com/uploads/images/2019/11/7a1e805a6e29eb3f432893094276b6d2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+
+.services-list-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 73px;
+    height: 73px;
+    background-image: url(https://s8.hostingkartinok.com/uploads/images/2019/11/24a413e62d2407f0360b613fe042df39.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+
+.services-list-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 73px;
+    height: 73px;
+    background-image: url(https://s8.hostingkartinok.com/uploads/images/2019/11/028be6296afdc18e9aee5ac0ba297c36.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+
+.services-list-item-title {
+    text-transform: none;
+    font-size: 18px;
+}
+
+.services-list-item-description {
+    font-size: 1rem;
+    padding: 0;
+    font-family: "Roboto Slab", "Arial", sans-serif;
+    font-style: normal;
+    line-height: 1.2;
+}
+
+/* section contacts formatting */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+    background: url(https://s8.hostingkartinok.com/uploads/images/2019/11/b896ffc59dab1e64ef249c63adada899.jpg) no-repeat right;
+    background-size: cover;
+    min-height: 676px;
+    width: 100%;
+}
+
+.contacts-form-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 214px;
+    margin-bottom: 30px;
+}
+
+.contacts-form-list-item *::placeholder {
+    text-transform: uppercase;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #bbbbbb;
+    line-height: 1.2;
+}
+
+.contacts-form-user-name,
+.contacts-form-user-email,
+.contacts-form-user-subject,
+.contacts-form-user-message {
+    border: unset;
+    border-radius: 5px; 
+    width: 455px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #bbbbbb;
+    line-height: 1;
+    outline: unset;
+}
+
+.contacts-form-user-name:focus:valid,
+.contacts-form-user-email:focus:valid,
+.contacts-form-user-message:focus:valid,
+.contacts-form-user-subject:focus {
+    border: 2px solid #008000;
+    padding: 17px;
+    transition: border 0.2s linear, padding 0.2s linear;
+}
+
+.contacts-form-user-name:focus:invalid,
+.contacts-form-user-email:focus:invalid,
+.contacts-form-user-message:focus:invalid {
+    border: 2px solid #8B0000;
+    padding: 17px;
+    transition: border 0.2s linear, padding 0.2s linear;
+}
+
+.contacts-form-user-name,
+.contacts-form-user-email,
+.contacts-form-user-subject {
+    padding: 19px;
+    height: 52px;
+}
+
+.contacts-form-user-message {
+    padding: 19px;
+    height: 214px;
+    resize: none;
+    line-height: 1.2;
+}
+
+.contacts-form-button {
+    width: 240px;
+    height: 68px;
+    align-self: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #fed136;
+    border: unset;
+    border-radius: 5px;    
+}
+
+.contacts-title {
+    color: #ffffff;
+}
