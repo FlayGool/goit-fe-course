@@ -41,13 +41,16 @@ input[type="ratio"].visually-hidden {
 /* Formating header */
 
 .promo {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 540px;
     margin-bottom: 70px;
     background-image: url(https://s8.hostingkartinok.com/uploads/images/2019/11/7221db8576cf07e362c8ae8e96d96d59.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .nav-promo {
@@ -67,11 +70,11 @@ input[type="ratio"].visually-hidden {
 }
 
 .nav-list {
-display: flex;
-width: 100%;
-min-height: 76px;
-justify-content: center;
-align-items: center;
+    display: flex;
+    width: 100%;
+    min-height: 76px;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-list-item {
@@ -241,14 +244,15 @@ align-items: center;
 @media screen and (min-width: 768px) {
 
     .container {
-        width: 768px;
+        min-width: 748px;
+        max-width: 768px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
     }
 
     .promo {
-        width: 768px;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -256,6 +260,8 @@ align-items: center;
         margin-bottom: 70px;
         background-image: url(https://s8.hostingkartinok.com/uploads/images/2019/11/062c32c6ddb184b963b1caf6c4ff996b.png);
         background-color: rgba(0, 0, 0, 0.7);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .logo {
@@ -292,7 +298,7 @@ align-items: center;
         flex-wrap: wrap;
         justify-content: center;
         width: 492px;
-        margin: 0 auto;    
+        margin: 0 auto;
     }
 
     .partners-list-item {
@@ -323,7 +329,8 @@ align-items: center;
 
 @media screen and (min-width: 940px) {
     .container {
-        width: 940px;
+        min-width: 920px;
+        max-width: 940px;
         margin: 0 auto;
     }
 
@@ -340,12 +347,17 @@ align-items: center;
     .nav-promo {
         padding: 0;
         min-height: 144px;
+        min-width: 920px;
+        max-width: 940px;
         margin-bottom: 90px;
+        margin: 0;
+        align-self: center;
     }
 
     .partners-list {
         justify-content: space-between;
-        width: 940px;
+        min-width: 920px;
+        max-width: 940px;
     }
 
     .partners-list-item {
@@ -354,10 +366,7 @@ align-items: center;
         margin-bottom: 38px;
     }
 
-    .partners-list-item:not(:nth-last-child(-1n+2)) {
-        margin-bottom: 38px;
-    }
-
+    .partners-list-item:not(:nth-last-child(-1n+2)),
     .partners-list-item:nth-last-child(-1n+2) {
         margin-bottom: 38px;
     }
