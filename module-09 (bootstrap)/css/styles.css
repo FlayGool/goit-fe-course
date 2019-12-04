@@ -44,7 +44,7 @@ input[type="ratio"].visually-hidden {
 
 .nav-promo {
     min-height: 190px;
-    margin-bottom: 36px;
+    margin:0 auto 36px auto;
 }
 
 .nav-list,
