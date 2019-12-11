@@ -9,13 +9,6 @@
 .site-logo {
   margin-top: 30px;
 
-  .site-logo,
-  .site-logo__img {
-    width: 90px;
-    height: 24px;
-    fill: $white-link-color;
-  }
-
   &:hover,
   &:focus {
     border-bottom: 3px solid $secondary-color;
@@ -28,6 +21,14 @@
   }
 
 }
+
+.site-logo,
+.site-logo__img {
+  width: 90px;
+  height: 24px;
+  fill: $white-link-color;
+}
+
 
 .site-nav {
   margin-top: 40px;
