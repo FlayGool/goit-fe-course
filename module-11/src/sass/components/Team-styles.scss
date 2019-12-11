@@ -1,0 +1,110 @@
+.section-team__description {
+  max-width: 980px;
+  margin: 0 auto 90px auto;
+}
+
+.section-team__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+
+.team-card {
+  margin: 0 0 80px 0;
+  display: grid;
+  justify-items: center;
+  position: relative;
+  width: 380px;
+  height: 540px;
+
+  &__item {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    transition: transform 0.4s linear, opacity 0.4s linear;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  &__img {
+    position: absolute;
+    transition: transform 0.4s linear, opacity 0.4s linear;
+  }
+
+
+  &__photo-container {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background-color: $services-icon-color;
+
+    &:hover .team-card__item,
+    &:hover .team-card__img,
+    &:hover .social-list {
+      transform: translateX(-10px) translateY(-10px);
+    }
+
+    &:hover .social-list {
+      opacity: 1;
+    }
+
+    &:hover .team-card__item {
+      opacity: 0.8;
+    }
+
+  }
+}
+
+.social-list {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  top: 207px;
+  left: 73px;
+  z-index: 2;
+  opacity: 0;
+  transition: transform 0.4s linear, opacity 0.4s linear;
+
+  &__item:not(:last-child) {
+    border-right: 1px solid $main-color;
+  }
+
+  &__link {
+    display: block;
+    width: 56px;
+    height: 56px;
+    font-family: "icomoon";
+    color: $main-color;
+    line-height: 56px;
+    font-size: 30px;
+    background-color: $secondary-color;
+    transition: background 0.5s linear, color 0.3s linear;
+
+    &:hover,
+    &:focus {
+      color: $white-link-color;
+      background-color: $main-color;
+    }
+
+    &--facebook::before {
+      content: "\e904";
+    }
+
+    &--twitter::before {
+      content: "\e90b";
+    }
+
+    &--pinterest::before {
+      content: "\e90a";
+    }
+
+    &--instagram::before {
+      content: "\e907";
+    }
+
+  }
+}
+
+.team-card__item--gradient {
+  background-image: linear-gradient(0deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+}

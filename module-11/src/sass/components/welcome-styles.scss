@@ -1,0 +1,17 @@
+.section-welcome__subtitle {
+  margin-bottom: 50px;
+}
+
+.button--transparent {
+  outline: unset;
+  border: 3px solid $white-link-color;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $main-color;
+    color: $main-color;
+    transition: border 0.6s linear, color 0.6s linear;
+  }
+
+}
