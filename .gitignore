@@ -390,3 +390,19 @@ typings/
 
 # dotenv environment variables file
 .env
+
+# other 
+gulp
+node_modules
+src
+.babelrc
+.browserslistrc
+.editorconfig
+.gitattributes
+.gitignore
+.prettierrc
+.stylelintrc
+gulpfile.js
+LICENSE
+package.json
+package-lock.json
